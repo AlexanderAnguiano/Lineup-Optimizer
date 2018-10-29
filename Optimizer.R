@@ -146,7 +146,7 @@ combo_tib <- mutate(combo_tib, Pos9 = combo_tib$Roster.Position)
 combo_tib <- select(combo_tib, 1:27, 35)
 
 
-### Joine in each Players Projected Points ###
+### Join in each Players Projected Points ###
 
 combo_tib <- combo_tib %>%
   left_join(tib_id, by = c("V1" = "ID"))
