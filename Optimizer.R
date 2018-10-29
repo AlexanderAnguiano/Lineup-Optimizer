@@ -1,4 +1,4 @@
-
+### Load Libraries ###
 
 library(gtools)
 library(dplyr)
@@ -91,9 +91,9 @@ combo_tib <- mutate(combo_tib, Salary9 = combo_tib$Salary)
 combo_tib <- select(combo_tib, 1:17, 25)
 
 ### Add all salaries and filter Total Salaries under 50000 requirement. ###
+
 combo_tib <- mutate(combo_tib, 
                     Total_Salary = Salary1 + Salary2 + Salary3 + Salary4 + Salary5 + Salary6 + Salary7 + Salary8 + Salary9)
-
 
 combo_tib <- filter(combo_tib, Total_Salary <= 50000, Total_Salary >= 49500)
 
@@ -210,7 +210,6 @@ combo_tib <- mutate(combo_tib,
 
 
 vlookall <- data.frame(combo_tib)
-
 
 
 vlookall$DSTreduced1 <- ifelse(vlookall$Pos1 == "DST", 1, 0)
