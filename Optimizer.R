@@ -299,7 +299,7 @@ vlookall <- vlookall[vlookall$WRreducedTotal >= 3,]
 
 vlookfinal <- vlookall[c(1:9, 19:28, 38)]
 
-write.csv(vlookfinal, file = "Wk7FinalLineUpsv3.csv")
+write.csv(vlookfinal, file = "Wk8FinalLineUps.csv")
 
 
 
